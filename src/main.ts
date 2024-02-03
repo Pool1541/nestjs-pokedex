@@ -11,6 +11,10 @@ async function bootstrap() {
     new ValidationPipe({
       whitelist: true,
       forbidNonWhitelisted: true,
+      transform: true,
+      transformOptions: {
+        enableImplicitConversion: true, // Convierte los valores a su tipo de dato correspondiente. Por ejemplo, si el valor es un string y el tipo de dato es un número, se convierte automáticamente.
+      },
     }),
   );
 
