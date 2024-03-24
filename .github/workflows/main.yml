@@ -26,7 +26,7 @@ jobs:
         run: node ./works/first_work.js
 
       - name: Commit and Push Changes
-        uses: stefanzwaifel/git-auto-comit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'ci(message): first action'
           commit_user_name: Pool [GitHub Actions]
