@@ -1,10 +1,10 @@
 name: Stats
 
 on:
-  # push:
-  #   branches: [main]
-  schedule:
-    - cron: '0 0 * * *' #Se ejecuta todos los días a las 00:00 horas
+  push:
+    branches: [main]
+  # schedule:
+  #   - cron: '0 0 * * *' #Se ejecuta todos los días a las 00:00 horas
 
 jobs:
   build:
